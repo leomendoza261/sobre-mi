@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Juego Piedra, Papel y Tijeras</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Juego Piedra, Papel y Tijeras</h1>
+        <div id="nombreInput">
+            <label for="nombreJugador">Ingresa tu nombre:</label>
+            <input type="text" id="nombreJugador">
+            <button id="botonInicio">Comenzar</button>
+        </div>
+
+        <div id="juego" style="display: none;">
+
+            <div class="selecciones">
+                <div>
+                    <p><span id="mostrarNombreJugador"></span>: <span id="puntuacionJugador">0</span></p>
+                    <img src="./images/shine.png" alt="Selección del jugador" id="imagenSeleccionJugador">
+                </div>
+                <div>
+                    <p>PC: <span id="puntuacionPC">0</span></p>
+                    <img src="./images/shine.png" alt="Selección del PC" id="imagenSeleccionPC">
+                </div>
+            </div>
+
+            <div class="opciones">
+                <img src="./images/piedra.png" alt="Piedra" id="piedra">
+                <img src="./images/papel.png" alt="Papel" id="papel">
+                <img src="./images/tijeras.png" alt="Tijera" id="tijeras">
+            </div>
+
+            <div id="resultado"></div>
+
+            <button id="botonReiniciar">Reiniciar</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
